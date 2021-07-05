@@ -14,6 +14,7 @@ h6 {
   font-size: 3rem;
   margin:  5%;
   color: #FEF2BF;
+  line-height: 2;
 }
 
 .container {
@@ -56,4 +57,17 @@ h6 {
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+
+.restart {
+  background-color: #FFF5DE;
+  margin: 25px;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  border: 10px solid black;
+  border-radius: 20%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }

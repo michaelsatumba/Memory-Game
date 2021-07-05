@@ -6,11 +6,10 @@ var gamePattern = []
 var level = 0
 var started = false
 
-$(document).on('keypress',function(event) {
+$(".restart").click(function() {
   if (!started) {
     nextSequence();
-    $(`#level-title`).text(`Level: ` + level);
-    var started = true;
+    started = true;
   }
 
 });
@@ -87,7 +86,7 @@ function checkAnswer(currentLevel) {
   $("body").removeClass("game-over");
   }, 200);
 
-  $("#level-title").text("Your score was " + gamePattern.length + " Game Over, Press Any Key to Restart");
+  $("#level-title").text("Your Score Was " + gamePattern.length + "." + " Game Over, Tap The White Button To Restart");
 
   startOver();
   }
